@@ -15,16 +15,23 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         listViewItems = findViewById(R.id.listViewItems);
 
         listProducts = new ArrayList<String>() {{
-            add("Piñata de Mickey");
-            add("Piñata de Pepa");
-            add("Piñata de Ben 10");
-            add("Piñata de Tik Tok");
+            add("Item #1");
+            add("Item #2");
+            add("Item #3");
+            add("Item #4");
+            add("Item #5");
+            add("Item #6");
+            add("Item #7");
+            add("Item #8");
+            add("Item #9");
+            add("Item #10");
         }};
 
         ItemsAdapter itemsAdapter = new ItemsAdapter(this, R.layout.list_view_item, listProducts);
